@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    #link {
+      display: block;
+      margin: 20px;
+      text-align: center;
+      color: blue;
+      text-decoration: underline;
+    }
+    #dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="loginSection">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="loginButton">Login</button>
+    <div id="status"></div>
+    <a id="signupLink" href="http://localhost:3001/auth/signup" target="_blank">Signup</a>
+  </div>
+  
+  <div id="dashboard">
+    <h3>Welcome, <span id="userName"></span></h3>
+    <p>Email: <span id="userEmail"></span></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
